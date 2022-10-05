@@ -25,39 +25,53 @@ public class MainClass {
                 
                 switch(pilih){
                     case 1:
-                        System.out.println("--Cek SPP Mahasiswa--");
-                        System.out.println("NIM : ");
+                        System.out.println("--INPUT DATA MAHASISWA--");
+                        System.out.print("NIM : ");
                         mhs.setNim(inp.readLine());
-                        System.out.println("Nama : ");
+                        System.out.print("Nama : ");
                         undika.setNama(inp.readLine());
-                        System.out.println("Alamat : ");
+                        System.out.print("Alamat : ");
                         undika.setAlamat(inp.readLine());
-                        System.out.println("Prodi : ");
+                        System.out.print("Prodi : ");
                         mhs.setProdi(inp.readLine());
-                        System.out.println("Angkatan : ");
+                        System.out.print("Angkatan : ");
                         mhs.setAngkatan(Integer.parseInt(inp.readLine()));
-                        System.out.println("Semester : ");
+                        System.out.print("Semester : ");
                         mhs.setSemester(Integer.parseInt(inp.readLine()));
-                        System.out.println("Biaya SPP : " + mhs.getSpp());
-                        System.out.println("Total SPP yang perlu dibayar : " + mhs.getBayarSPP());
+                        System.out.println("--DATA SPP MAHASISWA--");
+                        System.out.println("NIM                            : " + mhs.getNim());
+                        System.out.println("Nama mahasiswa                 : " + undika.getNama());
+                        System.out.println("Alamat mahasiswa               : " + undika.getAlamat());
+                        System.out.println("Prodi                          : " + mhs.getProdi());
+                        System.out.println("Angkatan                       : " + mhs.getAngkatan());
+                        System.out.println("Semester                       : " + mhs.getSemester());
+                        System.out.println("Biaya SPP/semester             : " + mhs.getSpp());
+                        System.out.println("Total SPP yang perlu dibayar   : " + mhs.getBayarSPP());
                         System.out.println("");
                         
                         break;
                     case 2:
-                        System.out.println("--Cek Gaji Karyawan--");
-                        System.out.println("NIK : ");
+                        System.out.println("--INPUT DATA KARYAWAN--");
+                        System.out.print("NIK : ");
                         kar.setNik(inp.readLine());
-                        System.out.println("Nama : ");
+                        System.out.print("Nama : ");
                         undika.setNama(inp.readLine());
-                        System.out.println("Alamat : ");
+                        System.out.print("Alamat : ");
                         undika.setAlamat(inp.readLine());
-                        System.out.println("Bagian : ");
+                        System.out.print("Bagian : ");
                         kar.setBagian(inp.readLine());
-                        System.out.println("Kehadiran : ");
+                        System.out.print("Kehadiran : ");
                         kar.setKehadiran(Integer.parseInt(inp.readLine()));
-                        System.out.println("Gaji per hari : ");
+                        System.out.print("Gaji per hari : ");
                         kar.setGaji_per_hari(Integer.parseInt(inp.readLine()));
-                        System.out.println("Gaji total yang di dapat : " + kar.getTotalGaji());
+                        System.out.println("--DATA GAJI KARYAWAN--");
+                        System.out.println("NIK                        : " + kar.getNik());
+                        System.out.println("Nama karyawan              : " + undika.getNama());
+                        System.out.println("Alamat karyawan            : " + undika.getAlamat());
+                        System.out.println("Bagian                     : " + kar.getBagian());
+                        System.out.println("Kehadiran                  : " + kar.getBagian());
+                        System.out.println("Gaji per hari              : " + kar.getGaji_per_hari());
+                        System.out.println("Gaji total yang di dapat   : " + kar.getTotalGaji());
                         break;
                     case 3:
                         System.exit(0);
