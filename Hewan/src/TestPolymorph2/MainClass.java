@@ -18,11 +18,12 @@ public class MainClass {
         
         //panggil method overloading getData
         nmk.getData();
-        nmk.getData("Pradita");
+        nmk.getData("Bu Ayuningtyas");
         
         //panggil method overriding
         System.out.println("Ini overriding method");
-        System.out.println("Nilai PBO : " + npbo.hitungNilai(80, 60, 80));
+        npbo.getNilai();
+        
     }
     
 }
